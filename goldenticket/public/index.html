@@ -1,44 +1,350 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>GoldenTicket Concierge — Votre prochain grand moment</title>
-  <meta name="description" content="Recherche de billets pour concerts, sport et événements. Confiez votre demande à GoldenTicket Concierge, selon vos envies et votre budget.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
+
+  <meta
+    name="description"
+    content="Recherche de billets pour concerts, sport et événements. Confiez votre demande à GoldenTicket Concierge, selon vos envies et votre budget."
+  >
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
 </head>
+
 <body>
+
   <a class="skip" href="#demande">Aller au formulaire</a>
-  <header class="header wrap"><a class="brand" href="/" aria-label="GoldenTicket Concierge, accueil"><span class="monogram">GT</span><span>GOLDENTICKET<small>CONCIERGE</small></span></a><a class="header-link" href="#demande">Confier ma recherche <span aria-hidden="true">↗</span></a></header>
+
+  <header class="header wrap">
+    <a class="brand" href="/" aria-label="GoldenTicket Concierge, accueil">
+      <span class="monogram">GT</span>
+      <span>
+        GOLDENTICKET
+        <small>CONCIERGE</small>
+      </span>
+    </a>
+
+    <a class="header-link" href="#demande">
+      Confier ma recherche <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
   <main>
+
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow">CONCERTS · SPORT · ÉVÉNEMENTS</p><h1 id="hero-title">Les grands moments<br>se vivent <em>en vrai.</em></h1><p class="intro">L’artiste que vous attendez. Le match que vous ne voulez pas manquer. Dites-nous où vous rêvez d’être, nous recherchons vos billets.</p><a class="button" href="#demande">Trouver mes places <span aria-hidden="true">↗</span></a><p class="caption">Une recherche sur mesure, selon votre budget.</p></div>
-      <aside class="editorial" aria-label="Notre approche"><span class="edition">GOLDENTICKET / CONCIERGERIE</span><p>Votre événement.<br>Vos envies.<br><em>Notre recherche.</em></p><div class="editorial-bottom"><span>Le prochain souvenir<br>commence ici.</span><span class="star" aria-hidden="true">✳</span></div></aside>
-    </section>
-    <section class="steps wrap" aria-label="Comment ça marche"><div><span>01</span><p><strong>Racontez-nous votre envie</strong>Un événement, une date, un budget.</p></div><div><span>02</span><p><strong>Nous recherchons vos places</strong>Une sélection selon vos critères.</p></div><div><span>03</span><p><strong>Vous choisissez</strong>Nous vous recontactons avec une proposition.</p></div></section>
-    <section class="request wrap" id="demande" aria-labelledby="form-title">
-      <div class="request-intro"><p class="eyebrow">VOTRE PROCHAINE SORTIE</p><h2 id="form-title">Une envie ?<br><em>Parlons billets.</em></h2><p>Du concert au grand rendez-vous sportif, confiez-nous votre recherche.</p><p class="note">Cette demande ne constitue ni une réservation ni un achat. Toute proposition dépend des disponibilités ; le prix et les conditions vous seront communiqués avant votre décision.</p><div class="currency-note">Votre budget s’entend <strong>par place, en euros.</strong></div></div>
-      <form id="request-form">
-        <div class="form-heading"><span>VOTRE DEMANDE</span><span>* Champs obligatoires</span></div>
-        <div class="fields">
-          <label>Nom et prénom *<input name="name" autocomplete="name" maxlength="100" required placeholder="Votre nom complet"></label>
-          <label>Moyen de contact *<input name="contact" maxlength="160" required placeholder="E-mail, téléphone ou @Instagram" aria-describedby="contact-help"><small id="contact-help">Pour un pseudo, précisez le réseau social.</small></label>
-          <label class="full">Événement recherché *<input name="event" maxlength="200" required placeholder="Artiste, équipe, spectacle…"></label>
-          <label>Ville *<input name="city" maxlength="100" required placeholder="Ex. Paris"></label>
-          <label>Date souhaitée *<input name="date" type="date" required></label>
-          <label>Nombre de places *<input name="quantity" type="number" min="1" max="20" step="1" value="2" required></label>
-          <label>Catégorie / type de places *<input name="category" maxlength="100" required placeholder="Fosse, tribune, VIP, indifférent…"></label>
-          <label class="full">Budget maximum par place (€) *<input name="budget" type="number" min="1" max="100000" step="0.01" required placeholder="Ex. 150"><small>Le montant maximum que vous souhaitez dépenser pour une place.</small></label>
-          <label class="full">Un détail à ajouter ?<textarea name="comment" rows="3" maxlength="1000" placeholder="Places côte à côte, flexibilité sur les dates…"></textarea></label>
+
+      <div class="hero-copy">
+        <p class="eyebrow">CONCERTS · SPORT · ÉVÉNEMENTS</p>
+
+        <h1 id="hero-title">
+          Les grands moments<br>
+          se vivent <em>en vrai.</em>
+        </h1>
+
+        <p class="intro">
+          L’artiste que vous attendez. Le match que vous ne voulez pas manquer.
+          Dites-nous où vous rêvez d’être, nous recherchons vos billets.
+        </p>
+
+        <a class="button" href="#demande">
+          Trouver mes places <span aria-hidden="true">↗</span>
+        </a>
+
+        <p class="caption">
+          Une recherche sur mesure, selon votre budget.
+        </p>
+      </div>
+
+      <aside class="editorial" aria-label="Notre approche">
+
+        <span class="edition">
+          GOLDENTICKET / CONCIERGERIE
+        </span>
+
+        <p>
+          Votre événement.<br>
+          Vos envies.<br>
+          <em>Notre recherche.</em>
+        </p>
+
+        <div class="editorial-bottom">
+          <span>
+            Le prochain souvenir<br>
+            commence ici.
+          </span>
+
+          <span class="star" aria-hidden="true">✳</span>
         </div>
-        <div class="honeypot" aria-hidden="true"><label>Votre site web<input name="website" tabindex="-1" autocomplete="off"></label></div>
-        <label class="consent"><input name="consent" type="checkbox" required><span>J’accepte la transmission de ces informations à GoldenTicket Concierge via Discord pour traiter ma demande et me recontacter. *</span></label>
-        <button class="button submit" type="submit">Envoyer ma demande <span aria-hidden="true">↗</span></button>
-        <p id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
-        <noscript>Activez JavaScript dans votre navigateur pour envoyer ce formulaire.</noscript>
-        <p class="privacy">Vos coordonnées servent au suivi de votre recherche. N’indiquez aucune donnée bancaire ou pièce d’identité.</p>
-      </form>
+
+      </aside>
+
     </section>
+
+
+    <section class="steps wrap" aria-label="Comment ça marche">
+
+      <div>
+        <span>01</span>
+        <p>
+          <strong>Racontez-nous votre envie</strong>
+          Un événement, une date, un budget.
+        </p>
+      </div>
+
+      <div>
+        <span>02</span>
+        <p>
+          <strong>Nous recherchons vos places</strong>
+          Une sélection selon vos critères.
+        </p>
+      </div>
+
+      <div>
+        <span>03</span>
+        <p>
+          <strong>Vous choisissez</strong>
+          Nous vous recontactons avec une proposition.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section
+      class="request wrap"
+      id="demande"
+      aria-labelledby="form-title"
+    >
+
+      <div class="request-intro">
+
+        <p class="eyebrow">
+          VOTRE PROCHAINE SORTIE
+        </p>
+
+        <h2 id="form-title">
+          Une envie ?<br>
+          <em>Parlons billets.</em>
+        </h2>
+
+        <p>
+          Du concert au grand rendez-vous sportif,
+          confiez-nous votre recherche.
+        </p>
+
+        <p class="note">
+          Cette demande ne constitue ni une réservation ni un achat.
+          Toute proposition dépend des disponibilités ; le prix et les
+          conditions vous seront communiqués avant votre décision.
+        </p>
+
+        <div class="currency-note">
+          Votre budget s’entend
+          <strong>par place, en euros.</strong>
+        </div>
+
+      </div>
+
+
+      <form id="request-form">
+
+        <div class="form-heading">
+          <span>VOTRE DEMANDE</span>
+          <span>* Champs obligatoires</span>
+        </div>
+
+
+        <div class="fields">
+
+          <label>
+            Nom et prénom *
+            <input
+              name="name"
+              autocomplete="name"
+              maxlength="100"
+              required
+              placeholder="Votre nom complet"
+            >
+          </label>
+
+
+          <label>
+            Moyen de contact *
+            <input
+              name="contact"
+              maxlength="160"
+              required
+              placeholder="E-mail, téléphone ou @Instagram"
+              aria-describedby="contact-help"
+            >
+
+            <small id="contact-help">
+              Pour un pseudo, précisez le réseau social.
+            </small>
+          </label>
+
+
+          <label class="full">
+            Événement recherché *
+            <input
+              name="event"
+              maxlength="200"
+              required
+              placeholder="Artiste, équipe, spectacle…"
+            >
+          </label>
+
+
+          <label>
+            Ville
+            <input
+              name="city"
+              maxlength="100"
+              placeholder="Ex. Paris"
+            >
+          </label>
+
+
+          <label>
+            Date souhaitée
+            <input
+              name="date"
+              type="date"
+            >
+          </label>
+
+
+          <label>
+            Nombre de places *
+            <input
+              name="quantity"
+              type="number"
+              min="1"
+              max="20"
+              step="1"
+              value="2"
+              required
+            >
+          </label>
+
+
+          <label>
+            Catégorie / type de places
+            <input
+              name="category"
+              maxlength="100"
+              placeholder="Fosse, tribune, VIP, indifférent…"
+            >
+          </label>
+
+
+          <label class="full">
+            Budget maximum par place (€)
+            <input
+              name="budget"
+              type="number"
+              min="1"
+              max="100000"
+              step="0.01"
+              placeholder="Ex. 150"
+            >
+
+            <small>
+              Le montant maximum que vous souhaitez dépenser pour une place.
+            </small>
+          </label>
+
+
+          <label class="full">
+            Un détail à ajouter ?
+            <textarea
+              name="comment"
+              rows="3"
+              maxlength="1000"
+              placeholder="Places côte à côte, flexibilité sur les dates…"
+            ></textarea>
+          </label>
+
+        </div>
+
+
+        <div class="honeypot" aria-hidden="true">
+          <label>
+            Votre site web
+            <input
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+
+        <label class="consent">
+
+          <input
+            name="consent"
+            type="checkbox"
+            required
+          >
+
+          <span>
+            J’accepte la transmission de ces informations à
+            GoldenTicket Concierge via Discord pour traiter ma demande
+            et me recontacter. *
+          </span>
+
+        </label>
+
+
+        <button class="button submit" type="submit">
+          Envoyer ma demande
+          <span aria-hidden="true">↗</span>
+        </button>
+
+
+        <p
+          id="form-status"
+          role="status"
+          aria-live="polite"
+          tabindex="-1"
+        ></p>
+
+
+        <noscript>
+          Activez JavaScript dans votre navigateur pour envoyer ce formulaire.
+        </noscript>
+
+
+        <p class="privacy">
+          Vos coordonnées servent au suivi de votre recherche.
+          N’indiquez aucune donnée bancaire ou pièce d’identité.
+        </p>
+
+      </form>
+
+    </section>
+
   </main>
-  <footer class="wrap"><a class="brand footer-brand" href="/">GOLDENTICKET <small>CONCIERGE</small></a><p>Recherche & revente de billets · Concerts, sport, événements</p></footer>
+
+
+  <footer class="wrap">
+
+    <a class="brand footer-brand" href="/">
+      GOLDENTICKET
+      <small>CONCIERGE</small>
+    </a>
+
+    <p>
+      Recherche & revente de billets · Concerts, sport, événements
+    </p>
+
+  </footer>
+
 </body>
 </html>
